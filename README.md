@@ -1,10 +1,9 @@
-# 3PP-NOAH
+# nth-member
 
-**The five nth-member sites from one place.** Served at https://nth-member.github.io/.
+**The nth-member sites, listed.** Served at https://nth-member.github.io/, and reachable from the
+3PP-NOAH hub at https://3pp-noah.github.io/.
 
-`index.html` is the whole site: a large Ω with the five sites as radio buttons at the points of a
-pentagon around it, REVOTT at the top. Choosing one shows what it is and an **Open** button; Enter
-or a double-click opens it directly. No build step, no dependencies.
+`index.html` is the whole site: one card per site, each linking to it. No build step, no dependencies.
 
 | site | repository | what it is |
 |---|---|---|
