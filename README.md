@@ -16,3 +16,17 @@
 | https://nth-member.github.io/tsots_value_equation/ | nth-member/tsots_value_equation | the TSOTS value equation: a synthetic simulation of the Shula, run in the browser |
 | https://nth-member.github.io/ipproto/ | nth-member/ipproto | IPPROTO: the 256 IP protocol numbers in 13 categories, a capture reader and a packet bridge |
 | https://nth-member.github.io/revott-stamps/ | nth-member/revott-stamps | REVOTT stamps: feed items stamped onto a (Y, X) within a variable window |
+
+## Refreshing the sites
+
+One command, on the computer that keeps the sites, refreshes every 3PP-NOAH site whose data changes: JOMO
+SFO-WAM's feeds, REVOTT stamps, then GDELT into the GDELT day sources, REVOTT, the nth member,
+H-Gematria/ASCII and IPPROTO.
+
+```bash
+cd ~ && ./refresh-all.sh --push     # refresh and publish every updatable site
+cd ~ && ./refresh-all.sh            # refresh and commit, push nothing
+cd ~ && ./refresh-all.sh --check    # what GDELT has that is new; changes nothing
+```
+
+JOMO SFO-WAM's feeds and REVOTT stamps also refresh themselves every 15 minutes, from cron.
